@@ -132,8 +132,33 @@ namespace MSAUniApp.Models
                     }
                 }
                 context.SaveChanges();
+
+                var assessments = new List<Assessment>
+                {
+                     new Assessment {
+                        EnrollmentID = enrollments.Single(e => e.EnrollmentID == 0).EnrollmentID,
+                        AssessmentName = "Exam 1",
+                        AssessmentType = "Exam",
+                        DueDate = new DateTime( 2015-12-12 ),
+                        Notes = "2hour duration. Covering topics 1 to 5",
+
+                     },
+                      new Assessment {
+                        EnrollmentID = enrollments.Single(e => e.EnrollmentID == 1).EnrollmentID,
+                        AssessmentName = "Exam 2",
+                        AssessmentType = "Exam",
+                        DueDate = new DateTime( 2015-12-15 ),
+                        Notes = "2hour duration. Covering topics 6 to 8",
+
+                     }
+            };
+
             }
+
+            
         }
+
+        
 
         public MSAUniAppContext() : base("name=MSAUniAppContext")
         {
@@ -149,5 +174,7 @@ namespace MSAUniApp.Models
         public System.Data.Entity.DbSet<MSAUniApp.Models.Course> Courses { get; set; }
 
         public System.Data.Entity.DbSet<MSAUniApp.Models.Enrollment> Enrollments { get; set; }
+
+        public System.Data.Entity.DbSet<MSAUniApp.Models.Assessment> Assessments { get; set; }
     }
 }
