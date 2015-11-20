@@ -140,15 +140,23 @@ namespace MSAUniApp.Models
                         AssessmentName = "Exam 1",
                         AssessmentType = "Exam",
                         DueDate = new DateTime( 2015-12-12 ),
-                        Notes = "2hour duration. Covering topics 1 to 5",
+                        Notes = "2hour duration. Covering topics 1 to 5"
 
                      },
                       new Assessment {
-                        EnrollmentID = enrollments.Single(e => e.EnrollmentID == 1).EnrollmentID,
+                        EnrollmentID = enrollments.Single(e => e.StudentID == 0).EnrollmentID,
                         AssessmentName = "Exam 2",
                         AssessmentType = "Exam",
                         DueDate = new DateTime( 2015-12-15 ),
-                        Notes = "2hour duration. Covering topics 6 to 8",
+                        Notes = "2hour duration. Covering topics 6 to 8"
+
+                     },
+                                            new Assessment {
+                        EnrollmentID = enrollments.Single(e => e.StudentID == 1).EnrollmentID,
+                        AssessmentName = "Exam 2",
+                        AssessmentType = "Exam",
+                        DueDate = new DateTime( 2015-12-15 ),
+                        Notes = "2hour duration. Covering topics 6 to 8"
 
                      }
             };
