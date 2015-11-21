@@ -1,15 +1,14 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Students</title>
+    <title>Courses</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
-    <link rel="stylesheet" href="Content/style.css"/>
+    <link rel="stylesheet" href="Content/style.css" />
     <script src="scripts/jquery-1.9.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/indexpages.js"></script>
-    <script src="scripts/studentmodule.js"></script>
-
+    <script src="scripts/coursespages.js"></script>
+    <script src="scripts/CourseModule.js"></script>
 </head>
 <body>
     <header>
@@ -20,7 +19,7 @@
                 </div>
                 <div>
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Students</a></li>
+                        <li class="active"><a href="#">Courses</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -32,9 +31,9 @@
     </header>
     <div class="container">
         <p id="fn">no data working here - should be first name</p>
-        <a href="Create.html">+ Create a student</a>
+        <a href="Create.html">+ Create a Course</a>
         <div class="table-responsive">
-            <table class="table table-striped spaced-table table-hover hidden" id="tblstudent">
+            <table class="table table-striped spaced-table table-hover hidden" id="tblCourse">
                 <thead>
                     <tr>
                         <th>Last Name</th>
@@ -42,12 +41,11 @@
                         <th>Enrollment Date</th>
                         <th></th>
                         <th></th>
-                    </tr>       
+                    </tr>
                 </thead>
-                <tbody id="tblstudentcontent">
-                </tbody>
+                <tbody id="tblCoursecontent"></tbody>
             </table>
-            <p id="loadingmsg">Students table loading...</p>
+            <p id="loadingmsg">Courses table loading...</p>
         </div>
     </div>
 </body>

@@ -8,6 +8,9 @@ using System.Web;
 namespace MSAUniApp.Models
 {
     [DbConfigurationType(typeof(MySql.Data.Entity.MySqlEFConfiguration))]
+
+
+
     public class MSAUniAppContext : DbContext
     {
         // You can add custom code to this file. Changes will not be overwritten.
@@ -132,7 +135,7 @@ namespace MSAUniApp.Models
                     }
                 }
                 context.SaveChanges();
-
+/*
                 var assessments = new List<Assessment>
                 {
                      new Assessment {
@@ -159,7 +162,7 @@ namespace MSAUniApp.Models
                         Notes = "2hour duration. Covering topics 6 to 8"
 
                      }
-            };
+            };*/
 
             }
 

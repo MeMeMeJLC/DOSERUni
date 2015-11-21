@@ -1,26 +1,25 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Students</title>
+    <title>Students Courses</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="Content/bootstrap.min.css" />
-    <link rel="stylesheet" href="Content/style.css"/>
+    <link rel="stylesheet" href="Content/style.css" />
     <script src="scripts/jquery-1.9.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/indexpages.js"></script>
     <script src="scripts/studentmodule.js"></script>
-
 </head>
 <body>
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#">MSA demo</a>
+                    <a class="navbar-brand" href="#">DOSER University</a>
                 </div>
                 <div>
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Students</a></li>
+                        <li class="active"><a href="#">Enrollments</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -30,6 +29,10 @@
             </div>
         </nav>
     </header>
+    <h2>Student Details</h2>
+    <p>First Name: <p id="fn"></p></p>
+    <p>Last Name: <p id="ln"></p></p>
+
     <div class="container">
         <p id="fn">no data working here - should be first name</p>
         <a href="Create.html">+ Create a student</a>
@@ -37,17 +40,17 @@
             <table class="table table-striped spaced-table table-hover hidden" id="tblstudent">
                 <thead>
                     <tr>
-                        <th>Last Name</th>
-                        <th>First Name</th>
-                        <th>Enrollment Date</th>
+                        <th>Enrollment ID/th>
+                        <th>Course ID</th>
+                        <th>Student ID</th>
+                        <th>Grade</th>
                         <th></th>
                         <th></th>
-                    </tr>       
+                    </tr>
                 </thead>
-                <tbody id="tblstudentcontent">
-                </tbody>
+                <tbody id="tblenrollmentcontent"></tbody>
             </table>
-            <p id="loadingmsg">Students table loading...</p>
+            <p id="loadingmsg">enrollments table loading...</p>
         </div>
     </div>
 </body>
